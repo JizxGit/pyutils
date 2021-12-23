@@ -1,0 +1,22 @@
+
+# coding=utf8
+__author__ = 'jizx'
+
+from setuptools import setup
+from setuptools import find_packages
+
+setup(
+    name="myutils",
+    version=0.2,
+    author="jizhongxian",
+    author_email="jizhongxian@baidu.com",
+    description="开发代码时常用的一些方法",
+    keywords="",
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
+    python_requires=">=3.6",
+    dependency_links=[],  # 添加依赖链接
+    install_requires=[
+        'prettytable>="2.0"'
+    ]
+)
